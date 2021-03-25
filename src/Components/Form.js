@@ -5,14 +5,14 @@ const Form = () => {
     const { addTodo , clearList } = useContext(TodoListContext);
     const [inputText, setInputText] = useState('');
 
-    const submitTodoHandler = () => {
-        console.log(inputText);
+    const submitTodoHandler = (event) => {
+        event.preventDefault();
         addTodo(inputText);
         setInputText('');
     }
     const inputTodoHandler = event => setInputText(event.target.value);
     return (
-        <form autoComplete="off">
+        <form  autoComplete="off">
           <input value={inputText}
                 type="text" 
                 placeholder="add new task"  

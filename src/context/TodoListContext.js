@@ -12,14 +12,11 @@ const TodoListContextProvider = (props) => {
   
    //add Todos
     const addTodo = title => {
-        console.log(title);
-        console.log(todos);
         setTodos([...todos,{
             id: Date.now(),
             item: title,
             done: false
         }]);
-        console.log(todos);
     }
     //toggle Todos' status
     const toggleTodo = id =>{

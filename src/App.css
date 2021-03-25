@@ -101,3 +101,11 @@ form button:hover{
   text-decoration: line-through;
   opacity: 0.5;
 }
+
+.no-tasks {
+  color: #777;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: all 1s ease-in-out;
+}
